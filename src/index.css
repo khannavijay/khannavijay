@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2d2e32;
+  --color-secondary: #1a1b1f;
+  --color-background: #18191a;
+  --color-card: #232428;
+  --color-text: #fff;
+  --color-accent: #64f4ac;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark {
+  --color-primary: #2d2e32;
+  --color-secondary: #1a1b1f;
+  --color-background: #18191a;
+  --color-card: #232428;
+  --color-text: #fff;
+  --color-accent: #64f4ac;
+}
+
+.light {
+  --color-primary: #f5f6fa;
+  --color-secondary: #e6e8ec;
+  --color-background: #fff;
+  --color-card: #f0f1f3;
+  --color-text: #18191a;
+  --color-accent: #2dce89;
+}
+
+html, body, #root {
+  transition: background 0.3s, color 0.3s;
+}
+* {
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Remove the global rule for img and video */
+/* img, video {
+    max-width: 100%;
+    height: auto;
+} */

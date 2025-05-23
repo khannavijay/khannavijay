@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"); */
+
+/* ---------- GLOBAL STYLING ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-family: "Source Code Pro", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.125rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fefefe;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.875rem);
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+h4 {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  color: #fefefe;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #fefefe;
+}
+
+p {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 400;
+  color: #fefefe;
+  margin: 15px 0 20px 0;
+  line-height: 1.6;
+}
+
+/* .section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+} */
+
+button.normal {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 600;
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+}
+
+button.normal:hover {
+  color: #fff;
+  background-color: #088178;
+}
+
+body {
+  width: 100%;
+  background-color: var(--color-background);
+  overflow-x: hidden;
+}
+
+body::selection {
+  color: #000000;
+  background: #64f4ac;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CACACA;
+  transition: 0.3s ease;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FEFEFE;
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+
