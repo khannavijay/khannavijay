@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/khannavijay/static/css/main.37554462.css",
+    "main.js": "/khannavijay/static/js/main.f5bec660.js",
+    "static/js/787.27812ab2.chunk.js": "/khannavijay/static/js/787.27812ab2.chunk.js",
+    "static/media/Hoodie-guy.png": "/khannavijay/static/media/Hoodie-guy.a9bc749c7616d5b60e50.png",
+    "index.html": "/khannavijay/index.html",
+    "main.37554462.css.map": "/khannavijay/static/css/main.37554462.css.map",
+    "main.f5bec660.js.map": "/khannavijay/static/js/main.f5bec660.js.map",
+    "787.27812ab2.chunk.js.map": "/khannavijay/static/js/787.27812ab2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37554462.css",
+    "static/js/main.f5bec660.js"
+  ]
+}
