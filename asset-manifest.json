@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/khannavijay/static/css/main.37554462.css",
-    "main.js": "/khannavijay/static/js/main.e2632c61.js",
+    "main.css": "/khannavijay/static/css/main.fced3983.css",
+    "main.js": "/khannavijay/static/js/main.e8a6f5d3.js",
     "static/js/787.27812ab2.chunk.js": "/khannavijay/static/js/787.27812ab2.chunk.js",
     "static/media/Hoodie-guy.png": "/khannavijay/static/media/Hoodie-guy.a9bc749c7616d5b60e50.png",
     "index.html": "/khannavijay/index.html",
-    "main.37554462.css.map": "/khannavijay/static/css/main.37554462.css.map",
-    "main.e2632c61.js.map": "/khannavijay/static/js/main.e2632c61.js.map",
+    "main.fced3983.css.map": "/khannavijay/static/css/main.fced3983.css.map",
+    "main.e8a6f5d3.js.map": "/khannavijay/static/js/main.e8a6f5d3.js.map",
     "787.27812ab2.chunk.js.map": "/khannavijay/static/js/787.27812ab2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37554462.css",
-    "static/js/main.e2632c61.js"
+    "static/css/main.fced3983.css",
+    "static/js/main.e8a6f5d3.js"
   ]
 }
