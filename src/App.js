@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/navBar/NavBar';
 import Home from './components/home/Home';
 import Introduction from './components/introduction/Introduction';
 import Works from './components/works/Works';
-import Blogs from './components/blogs/Blogs';
+import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
-import BlogTemplate from './components/blog/BlogTemplate';
-import Chatbot from './components/chatbot/Chatbot';
+import Blogs from './components/blogs/Blogs';
+import BlogPost from './components/blogs/BlogPost';
 import { ThemeProvider } from './components/theme/ThemeContext';
+
+// Update asset paths to use process.env.PUBLIC_URL
+const publicUrl = process.env.PUBLIC_URL || '';
 
 function App() {
   return (
@@ -23,13 +26,13 @@ function App() {
                 <Home />
                 <Introduction />
                 <Works />
-                <Blogs />
+                <Testimonials />
                 <Contact />
+                <Blogs />
               </>
             } />
-            <Route path="/blog/:id" element={<BlogTemplate />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
-          <Chatbot />
         </div>
       </Router>
     </ThemeProvider>

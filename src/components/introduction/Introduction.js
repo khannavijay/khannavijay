@@ -2,7 +2,7 @@ import React from 'react'
 import './Introduction.css'
 
 function Introduction() {
-    var publicFolder = "../../../asserts/SVGIcons/";
+    const publicFolder = `${process.env.PUBLIC_URL}/asserts/SVGIcons/`;
     return (
         <section id="introduction">
             <div className="cards">
@@ -10,54 +10,54 @@ function Introduction() {
                     <div className="tech-stack">
                         <h3>Frontend Development</h3>
                         <div className="tech-stack">
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "html-5.svg"} height="30px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "css3.svg"} height="30px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "javascript.svg"} height="30px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "angular-icon.svg"} height="25px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "reactjs-icon.svg"} height="25px" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "html-5.svg"} height="30px" alt="HTML5" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "css3.svg"} height="30px" alt="CSS3" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "javascript.svg"} height="30px" alt="JavaScript" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "angular-icon.svg"} height="25px" alt="Angular" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "reactjs-icon.svg"} height="25px" alt="React" /></span>
                         </div>
 
                         <i className="fa-solid fa-code"></i>
                     </div>
                     <p>Making the Web Look Good</p>
-                    <a href="">8 PROJECTS</a>
+                    <a href="#projects">8 PROJECTS</a>
                 </div>
                 <div className="design-card">
                     <div className="tech-stack">
                         <h3>Backend Development</h3>
                         <div className="tech-stack">
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "nodejs-icon.svg"} height="25px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "expressjs-icon.svg"} height="25px" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "nodejs-icon.svg"} height="25px" alt="Node.js" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "expressjs-icon.svg"} height="25px" alt="Express.js" /></span>
                         </div>
                         <i className="fa-solid fa-terminal"></i>
                     </div>
-                    <p>Building the Web’s Backbone by implimenting REST and Micro Services</p>
-                    <a href="">10 PROJECTS</a>
+                    <p>Building the Web's Backbone by implimenting REST and Micro Services</p>
+                    <a href="#projects">10 PROJECTS</a>
                 </div>
                 <div className="design-card">
                     <div className="tech-stack">
                         <h3>Database Designing</h3>
                         <div className="tech-stack">
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "PostgreSQL-Dark.svg"} height="35px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "MySQL-Dark.svg"} height="35px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "mongodb-icon.svg"} height="35px" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "PostgreSQL-Dark.svg"} height="35px" alt="PostgreSQL" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "MySQL-Dark.svg"} height="35px" alt="MySQL" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "mongodb-icon.svg"} height="35px" alt="MongoDB" /></span>
                         </div>
                         <i className="fa-solid fa-table"></i>
                     </div>
                     <p>Building the Data Models, Fine tune Database performence by query optimization</p>
-                    <a href="">10 PROJECTS</a>
+                    <a href="#projects">10 PROJECTS</a>
                 </div>
                 <div className="design-card">
                     <div className="tech-stack">
                         <h3>Deploy and Maintain</h3>
                         <div className="tech-stack">
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "google_cloud-icon.svg"} height="25px" /></span>
-                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "amazon_aws-icon.svg"} height="25px" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "google_cloud-icon.svg"} height="25px" alt="Google Cloud" /></span>
+                            <span style={{"marginLeft": "5px"}}><img src={publicFolder + "amazon_aws-icon.svg"} height="25px" alt="AWS" /></span>
                         </div>
                         <i className="fa-solid fa-server"></i>
                     </div>
                     <p>Maintaining the Application servers</p>
-                    <a href="">10 PROJECTS</a>
+                    <a href="#projects">10 PROJECTS</a>
                 </div>
             </div>
             <div className="introduction-text">

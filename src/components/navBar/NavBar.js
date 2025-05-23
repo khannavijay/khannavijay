@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from 'react-router-dom';
 import ThemeToggle from '../theme/ThemeToggle';
@@ -19,10 +19,22 @@ function NavBar() {
         setIsMenuOpen(false);
     };
 
-    var socialMedia = [
-        { ref: "https://www.linkedin.com/in/khannavijay-tanneeru-7310757b", lable: "LinkedIn", icon: "fa-brands fa-linkedin-in" },
-        { ref: "https://github.com/khannavijay", lable: "Github", icon: "fa-brands fa-github" },
-        { ref: "mailto:tkhannavijay@gmail.com", lable: "Email", icon: "fa-regular fa-envelope" }
+    const socialMedia = [
+        { 
+            ref: "https://www.linkedin.com/in/khannavijay-tanneeru-7310757b", 
+            label: "LinkedIn", 
+            icon: <FaLinkedinIn /> 
+        },
+        { 
+            ref: "https://github.com/khannavijay", 
+            label: "Github", 
+            icon: <FaGithub /> 
+        },
+        { 
+            ref: "mailto:tkhannavijay@gmail.com", 
+            label: "Email", 
+            icon: <FaEnvelope /> 
+        }
     ];
 
     return (
@@ -41,7 +53,7 @@ function NavBar() {
             <div>
                 <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
                     <li><ScrollLink
-                        to="home"
+                        to="content-home"
                         spy={true}
                         smooth={true}
                         offset={-70}
@@ -97,8 +109,8 @@ function NavBar() {
                 <ul className={`social-media ${isSocialOpen ? 'active' : ''}`}>
                     {socialMedia.map((item, index) => (
                         <li key={index}>
-                            <i className={item.icon}></i>
-                            <a href={item.ref} target="_blank" rel="noopener noreferrer">{item.lable}</a>
+                            {item.icon}
+                            <a href={item.ref} target="_blank" rel="noopener noreferrer">{item.label}</a>
                         </li>
                     ))}
                 </ul>
