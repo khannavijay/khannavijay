@@ -30,7 +30,7 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 1rem;
     width: 100%;
 }
 
